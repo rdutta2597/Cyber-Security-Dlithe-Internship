@@ -1,0 +1,7 @@
+Web Application Testing Methodology:
+1.Collect Information -> Information Gathering
+2.Identify Technologies used
+3.Identify for known Vulnerabilities in the technologies
+4.Various Web pages and their functionality
+5.Run an automated scanner for known issues.
+6.Exploit the vulnerabilities -> Exploitation

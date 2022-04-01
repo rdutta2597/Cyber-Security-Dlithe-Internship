@@ -1,0 +1,7 @@
+Phases of Hacking:
+
+1.Information Gathering- Collecting information about the target
+2.Exploitation-gain access to target machine at a basic level (CLI)
+3.Privilege Escalation-escalating user's privilege from lower-level access to higher-level access
+4.Creating Backdoor-maintaining access of the victim by creating a backdoor.
+5.Clearing the Tracks -wipe out all the logs captured by the system to avoid being caught

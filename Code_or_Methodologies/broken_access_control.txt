@@ -1,0 +1,10 @@
+Steps to Perform Broken access control and IDOR:
+1. Open Burpsuite and turn off intercept from the Proxy tab.
+2. Open Webgoat from OWASP server IP.
+3. Webgoat -> (webgoat:webgoat) -> Start Webgoat -> Access Control Flaws ->Lab:Role-based Access Control
+4. Login as larry-> Password is:First name of every user with all lowercase.
+5. Now click on view profile
+6. Open Burpsuite..and find the most recent traffic packet with post method->View and render to verify it
+7. Now send that packet to Repeater and go to the repeater tab.
+8. Click on send and render.
+9. To view other users' data, we just change the id no. of a user. Eg: 101->102

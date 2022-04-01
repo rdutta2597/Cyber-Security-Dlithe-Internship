@@ -1,0 +1,33 @@
+NMAP basic commands:
+
+nmap <target>                  // Basic scan
+
+nmap -sV <target>          // version detection
+
+nmap -O <target>            // identify OS
+
+nmap -sn <target>          // ping scan to find live system
+
+nmap -T4 -A <target>     // will get version, OS, certificates and keys.
+
+nmap –open <target>   // will show only open ports
+
+nmap –open –reason <target> // will show open ports, and why nmap thinks it’s open
+
+nmap -F <target>             // quick scan
+
+nmap -sS <target>           // sync or stealth scan
+
+nmap -sT <target>           // TCP connect Scan
+
+nmap -sX <target>           // xmas scan FIN, URG, PSH
+
+nmap -sU <target>          // udp scan
+
+nmap -p <target>             // scan a particular port
+
+nmap -p- <target>           // scans all 65535 ports
+
+nmap -sC <target>           // to perform default script injection
+
+<target> =  http://www.certifedhacker.com or 192.168.0.94 or 192.168.0.1-254 or 192.168.0.0/24

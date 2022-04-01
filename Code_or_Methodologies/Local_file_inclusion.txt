@@ -1,0 +1,8 @@
+Steps to Local File Inclusions(LFI):
+1. Webgoat -> (webgoat:webgoat) -> Start Webgoat -> Access Control Flaws -> Bypass a Path Based Access Control Scheme
+2.Click on any file and view it
+3. Go to burpsuite and choose the recent packet with POST method
+4. Go to repeater tab and click on send & render.
+5.Now in request section, under File=… ;we change it to File=../../../../../../../../../etc/passwd&SUBMIT=View+File
+6.This will let us view the passwd file,i.e outside the web app directory
+7.Click on send,and we'll be able to see in render tab.

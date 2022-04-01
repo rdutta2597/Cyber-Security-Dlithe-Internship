@@ -1,0 +1,32 @@
+DOS attack and a few commands on it
+It's an Attack where hacker freezes / makes the target computer inaccessible
+to the Legitimate user through DOS vulnerability or through flooding with
+malicious packets.
+DOS(Denial Of Service) -1 attacker to 1 server
+DDOS(Distributed Denial Of Service)-Multiple attacker to 1 server attacker{more} = server{less}
+Ping of death-By increasing the size of packet sent in ping
+Command:ping <target-ip> -s <size of the packet> -l (in windows)
+eg: ping <ip_address> -s <packet_size> / -l <packet_size>
+eg: ping 192.168.1.101 -s (unix) 65000
+eg: ping 192.168.1.101 -l (windows) 65000
+ICMP-can be used to block on the servers
+32 or 64 bytes
+600bytes
+Protocol Based
+RFC Standards the waiting period for ACK after sending SYN+ACK 1 min
+1 packets = 1 min
+100 packets = 100 min
+
+Syn flood- continuously sending an only syn requests to the open port
+hping3 -S -p 80 www.goodshopping.com
+Command:hping3 -S -p <port number> <target-ip> - flood
+TCP Ping = Half Open Scan only set Syn flag and send the packet to open port of the target
+
+Some Common Ways to Defend Against DOS attacks.
+1. Keep all your machines, patched up to date.
+2. Sensing the traffic(Firewall) & blacklisting
+3. Load Balancer
+4. Content Distributed Network
+5. Blackhole
+Time To Live: Specifies the age of that specific packet
+HOIC, LOIC: Windows tools to perform DOS on websites.

@@ -1,0 +1,11 @@
+Steps to perform the MITM attack:
+1. Open ettercap-graphical and wireshark from the start menu
+2. After Opening ettercap, click on those 3 dots and select scan host. Here all the devices connected to our gateway will be added to the host list
+3. Go to host lists to view a list of host
+4. Here,add the gateway IP to target1 and the windows7(victim) to target2.
+5. Start the ARP poisoning attack from the circle icon in the window
+6. Here we can see, the victim's MAC Address has changed:
+7. Next we'll go to the packet sniffing part using wireshark:
+8. To test it, on the victim machine we open an HTTP login page and enter user credentials:
+9. Now After entering user credentials,wireshark will capture the data
+10. Since there are many packets so we use a filter to view the captured data and expand HTML Form URL Encoded

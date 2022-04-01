@@ -1,0 +1,12 @@
+Steps to perform Privilege Escalation:-
+1. First login as Curly
+2. Click on view profile
+3.Create an edit request
+4. Record the request body and keep backup in a text editor.
+5. Now logout from curly and login as larry
+6. Click on view profile and create a dummy request
+7. Now send the dummy request to repeater.
+8. Replay the recorded request body by pasting the recorded data and make a small change like phoneno.
+9.Click on send and render it.
+10. Finally login as Curly and verify the changes
+Vertical Privilege escalation: John: Larry

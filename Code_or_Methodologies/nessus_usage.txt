@@ -1,0 +1,9 @@
+Step to perform vulnerability scan:
+1. On terminal use, this command: bin/systemctl start nessusd.service
+2. Open the Nessus console in the browser by typing this URL:https://kali:8834/
+3. Log in with the username and password, that was used during sign up
+4. We should see a console by now.
+5. Create a new scan, and under the choose basic scan
+6. Supply a name and target IP of the victim.
+7. Click ok/save and start running the scan
+8. After the scan is complete, we can view and analyze the vulnerabilities and also generate a detailed report on it

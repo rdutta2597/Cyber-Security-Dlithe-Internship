@@ -1,0 +1,8 @@
+Basic Terminologies of Information Gathering
+
+1.Ports: The doors of a computer through which the data enters and exits. each computer has 65535 ports per NIC
+2.Services: A network task that is running on a computer
+3.Process / Protocol -> set of rules (Services)
+4.An actual medium where the content/data is passed is Ports:
+5.Service + Ports: Communication from Server to client.
+6.address for the packet to send / receive . Socket = IP : Port number ex: 192.168.1.10:8080

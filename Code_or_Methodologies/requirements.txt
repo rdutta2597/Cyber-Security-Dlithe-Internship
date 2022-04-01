@@ -1,0 +1,17 @@
+Virtual machines required to perform all attacks:
+
+1.Kali Linux
+2.Metasploitable
+3.Windows 7 VM
+4.OWASP
+
+Tools used:
+1.Nmap
+2.Nessus
+3.netdiscover
+4.Metasploit(msfconsole)
+5.ettercap
+6.wireshark
+7.Wappalyzer
+8.Burpsuite
+9.Webgoat(part of metaploitable)

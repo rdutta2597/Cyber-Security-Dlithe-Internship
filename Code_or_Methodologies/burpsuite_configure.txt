@@ -1,0 +1,12 @@
+To configure the Firefox with burpsuite, one should follow the following steps:
+1. From applications menu,go to -> 03-Web Application Analysis->Web Application Proxies->burpsuite
+2. A window will appear->click next and start burpsuite
+3. Once burpsuite is opened, go to Proxy tab and turn off Intercept.
+4. Open firefox->Go to Settings->Scroll down to the end ->Network settings->Settings..
+5. Click on Manual Proxy Configuration and in HTTP Proxy:127.0.0.1->check the box Also, use this proxy for HTTPS->OK
+6. On the firefox address bar, go to this URL: HTTP://127.0.01:8080
+7. Download CA certificate from the top right corner
+8. Go again to the settings page->Privacy and Security->Scroll down to the Certificate section and click on View Certificates…
+9. Under the Authorities tab, Import the CA certificate that we downloaded on the 8th step.
+10. Visit testfire.net, make a login attempt.
+11. In the burpsuite window, under the target tab we can see the entered login items in doLogin request.
